@@ -1,0 +1,200 @@
+        @import '_variables.scss';
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            color: #000;
+            overflow-x: hidden;
+            min-height: 100vh;
+            background: linear-gradient(#01579B, #03A9F4);
+            background-repeat: no-repeat;
+            .card-main {
+                height: 700px;
+                padding: 50px;
+                border-radius: 10px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                box-shadow: 0px 4px 8px 0px #283593;
+                .carousel {
+                    min-height: 370px;
+                    .carousel-indicators li {
+                        cursor: pointer;
+                        border-radius: 50% !important;
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+                @include devices(smallDevices) {
+                    .carousel {
+                        min-height: 350px;
+                        .carousel-indicators {
+                            margin-bottom: 0 !important;
+                        }
+                    }
+                }
+                .carousel-item {
+                    .card-0 {
+                        color: #fff;
+                        background-color: #536DFE;
+                        position: relative;
+                        margin-left: 70px;
+                        border-radius: 10px;
+                        min-height: 370px;
+                        .profile {
+                            color: #000;
+                            background-color: #FFD54F;
+                            position: absolute;
+                            left: -70px;
+                            top: 17%;
+                            border-radius: 8px;
+                            border-top-left-radius: 0px;
+                            border-bottom-right-radius: 0px;
+                            .profile-pic {
+                                width: 120px;
+                                height: 120px;
+                                border-bottom-left-radius: 10px;
+                                border-top-right-radius: 10px;
+                            }
+                        }
+                        @include devices(largeDevices) {
+                            .profile {
+                                .profile-pic {
+                                    width: 80px;
+                                    height: 80px;
+                                }
+                            }
+                        }
+                        @include devices(mediumDevices) {
+                            .profile {
+                                top: 24%;
+                                .profile-pic {
+                                    width: 90px;
+                                    height: 90px;
+                                }
+                            }
+                        }
+                        @include devices(smallDevices) {
+                            .profile {
+                                padding: 10px 15px!important;
+                                left: 40%;
+                                top: -7rem;
+                            }
+                        }
+                        @include devices(xSmallDevices) {
+                            .profile {
+                                left: 30%;
+                            }
+                        }
+                        .content {
+                            margin-left: 150px;
+                            margin-right: 80px;
+                            padding: 0 20px;
+                            font: 100% $font-common;
+                            font-size: 18px;
+                        }
+                        @include devices(largeDevices) {
+                            .content {
+                                font-size: 14px;
+                            }
+                        }
+                        @include devices(mediumDevices) {
+                            .content {
+                                margin-left: 120px;
+                                margin-right: 50px;
+                                font-size: 12px;
+                            }
+                        }
+                        @include devices(smallDevices) {
+                            .content {
+                                margin-left: 50px;
+                                margin-right: 50px;
+                            }
+                        }
+                        @include devices(xSmallDevices) {
+                            .content {
+                                font-size: 10px;
+                                margin: 0 10px;
+                            }
+                        }
+                        .open-quotes {
+                            margin-left: 130px;
+                            margin-top: 100px;
+                        }
+                        @include devices(mediumDevices) {
+                            .open-quotes {
+                                margin-left: 100px;
+                            }
+                        }
+                        @include devices(smallDevices) {
+                            .open-quotes {
+                                margin-top: 40px;
+                                margin-left: 40px;
+                            }
+                        }
+                        @include devices(xSmallDevices) {
+                            .open-quotes {
+                                margin-top: 50px;
+                                margin-left: 10px;
+                            }
+                        }
+                        .close-quotes {
+                            margin-bottom: 100px;
+                            margin-right: 60px
+                        }
+                        @include devices(mediumDevices) {
+                            .close-quotes {
+                                margin-right: 30px
+                            }
+                        }
+                        @include devices(xSmallDevices) {
+                            .close-quotes {
+                                margin-right: 10px
+                            }
+                        }
+                    }
+                }
+                @include devices(smallDevices) {
+                    .carousel-item {
+                        top: -3rem;
+                        .card-0 {
+                            margin-left: 0;
+                            top: 10rem;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+                @include devices(xSmallDevices) {
+                    .carousel-item {
+                        .card-0 {
+                            min-height: 400px;
+                        }
+                    }
+                }
+            }
+            @include devices(mediumDevices) {
+                .card-main {
+                    height: 600px;
+                    padding: 50px 20px;
+                }
+            }
+            @include devices(smallDevices) {
+                .card-main {
+                    height: 550px;
+                    padding: 50px 20px;
+                }
+            }
+            @include devices(xSmallDevices) {
+                .card-main {
+                    height: 650px;
+                }
+            }
+        }
+        
+        div.license {
+            position: relative;
+            bottom: 20px;
+            left: 20px;
+        }

@@ -1,0 +1,110 @@
+@import '_variable.scss';
+section {
+    width: 100vw;
+    min-height: 100vh;
+    div.main-carousel {
+        position: relative;
+        margin: 4rem 0;
+        div.carousel-cell {
+            width: 66%;
+            height: 400px;
+            margin-right: 3rem;
+            border-radius: 8px;
+            overflow: hidden;
+            &:hover {
+                border: 2px solid #FAF643;
+                transition: 1s;
+            }
+            &:before {
+                display: block;
+                text-align: center;
+            }
+            img {
+                display: block;
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+                transition: 2s;
+                &:hover {
+                    transform: scale3d(1.3, 1.3, 1.3);
+                    transition: 1s;
+                }
+            }
+            a div.overlay {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(245, 245, 245, 0.6);
+                color: black;
+                overflow: hidden;
+                width: 100%;
+                height: 40%;
+                display: flex;
+                justify-content: start;
+                align-content: center;
+                flex-wrap: wrap;
+                font: 100% $font-common;
+                div.text {
+                    margin-left: 1rem;
+                    p {
+                        margin-left: 2rem;
+                    }
+                    h5 {
+                        margin-bottom: 10px;
+                    }
+                }
+                @include devices(mediumDevices) {
+                    div.text {
+                        h5 {
+                            margin-top: 5px;
+                        }
+                        p {
+                            margin: 0;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        /* design flickity */
+        .flickity-prev-next-button.next {
+            right: 70px!important;
+            color: black;
+        }
+        .flickity-prev-next-button.next:hover {
+            right: 70px!important;
+            border: 2px solid #FAF643;
+            color: #FAF643;
+        }
+        .flickity-prev-next-button.previous {
+            left: 70px!important;
+            color: black;
+        }
+        .flickity-prev-next-button.previous:hover {
+            left: 70px!important;
+            border: 2px solid #FAF643;
+            color: #FAF643;
+        }
+        .flickity-page-dots {
+            bottom: -5rem!important;
+        }
+        .flickity-page-dots .dot {
+            width: 1rem!important;
+            height: 1rem!important;
+            background: #4688FB!important;
+        }
+        /* END design flickity */
+    }
+}
+
+
+/* text color */
+
+.blue-text {
+    color: #4688FB;
+}
+
+.gray-text {
+    color: #5a5858;
+}

@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: linear-gradient(#01579B, #03A9F4);
+  background-repeat: no-repeat;
+}
+body .card-main {
+  height: 700px;
+  padding: 50px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0px 4px 8px 0px #283593;
+}
+body .card-main .carousel {
+  min-height: 370px;
+}
+body .card-main .carousel .carousel-indicators li {
+  cursor: pointer;
+  border-radius: 50% !important;
+  width: 10px;
+  height: 10px;
+}
+@media only screen and (max-width: 576px) {
+  body .card-main .carousel {
+    min-height: 350px;
+  }
+  body .card-main .carousel .carousel-indicators {
+    margin-bottom: 0 !important;
+  }
+}
+body .card-main .carousel-item .card-0 {
+  color: #fff;
+  background-color: #536DFE;
+  position: relative;
+  margin-left: 70px;
+  border-radius: 10px;
+  min-height: 370px;
+}
+body .card-main .carousel-item .card-0 .profile {
+  color: #000;
+  background-color: #FFD54F;
+  position: absolute;
+  left: -70px;
+  top: 17%;
+  border-radius: 8px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .card-main .carousel-item .card-0 .profile .profile-pic {
+  width: 120px;
+  height: 120px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+@media only screen and (max-width: 992px) {
+  body .card-main .carousel-item .card-0 .profile .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body .card-main .carousel-item .card-0 .profile {
+    top: 24%;
+  }
+  body .card-main .carousel-item .card-0 .profile .profile-pic {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  body .card-main .carousel-item .card-0 .profile {
+    padding: 10px 15px !important;
+    left: 40%;
+    top: -7rem;
+  }
+}
+@media only screen and (max-width: 435px) {
+  body .card-main .carousel-item .card-0 .profile {
+    left: 30%;
+  }
+}
+body .card-main .carousel-item .card-0 .content {
+  margin-left: 150px;
+  margin-right: 80px;
+  padding: 0 20px;
+  font: 100% "Indie Flower", cursive;
+  font-size: 18px;
+}
+@media only screen and (max-width: 992px) {
+  body .card-main .carousel-item .card-0 .content {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body .card-main .carousel-item .card-0 .content {
+    margin-left: 120px;
+    margin-right: 50px;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  body .card-main .carousel-item .card-0 .content {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media only screen and (max-width: 435px) {
+  body .card-main .carousel-item .card-0 .content {
+    font-size: 10px;
+    margin: 0 10px;
+  }
+}
+body .card-main .carousel-item .card-0 .open-quotes {
+  margin-left: 130px;
+  margin-top: 100px;
+}
+@media only screen and (max-width: 768px) {
+  body .card-main .carousel-item .card-0 .open-quotes {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  body .card-main .carousel-item .card-0 .open-quotes {
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+}
+@media only screen and (max-width: 435px) {
+  body .card-main .carousel-item .card-0 .open-quotes {
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+}
+body .card-main .carousel-item .card-0 .close-quotes {
+  margin-bottom: 100px;
+  margin-right: 60px;
+}
+@media only screen and (max-width: 768px) {
+  body .card-main .carousel-item .card-0 .close-quotes {
+    margin-right: 30px;
+  }
+}
+@media only screen and (max-width: 435px) {
+  body .card-main .carousel-item .card-0 .close-quotes {
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  body .card-main .carousel-item {
+    top: -3rem;
+  }
+  body .card-main .carousel-item .card-0 {
+    margin-left: 0;
+    top: 10rem;
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 435px) {
+  body .card-main .carousel-item .card-0 {
+    min-height: 400px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body .card-main {
+    height: 600px;
+    padding: 50px 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  body .card-main {
+    height: 550px;
+    padding: 50px 20px;
+  }
+}
+@media only screen and (max-width: 435px) {
+  body .card-main {
+    height: 650px;
+  }
+}
+
+div.license {
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+}/*# sourceMappingURL=style.css.map */

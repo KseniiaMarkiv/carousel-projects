@@ -1,0 +1,155 @@
+@import '_variables.scss';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    section.container {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 15px;
+        place-content: center;
+        text-align: center;
+        font: 100% $font-common;
+        h1 {
+            font-size: 40px;
+            margin-bottom: 2rem;
+        }
+        div.container-testimonials {
+            max-width: 1000px;
+            height: 24rem;
+            padding: 0 90px;
+            padding-top: 1rem;
+            display: grid;
+            grid-template-columns: auto;
+            place-content: center;
+            background-color: #e1fcff;
+            // animation
+            animation-name: fade;
+            animation-duration: 1.5s;
+            p {
+                color: $color-common;
+                font-size: 20px;
+                font-weight: 900;
+                letter-spacing: 1.2px;
+            }
+            div.container-one-testim {
+                position: relative;
+                display: none;
+                width: 600px;
+                height: auto;
+                padding-bottom: 15px;
+                // text-align: center;
+                div.imgs {
+                    img {
+                        border-radius: 50%;
+                        margin-top: 20px;
+                    }
+                }
+                div.text {
+                    font-family: 'Arial', Times, sans-serif;
+                    font-weight: 100;
+                    font-size: 13px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 480px;
+                    height: 7rem;
+                    text-align: center;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    margin: auto;
+                }
+                div.quotes {
+                    position: relative;
+                    top: -10px;
+                }
+                div.name {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                div.prof {
+                    font-size: 10px;
+                }
+            }
+            div.buttons {
+                width: 600px;
+                height: 50px;
+                position: absolute;
+                top: 54%;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-wrap: wrap;
+                // border: 1px solid firebrick;
+                /* Next & previous buttons */
+                .prev,
+                .next {
+                    position: absolute;
+                    cursor: pointer;
+                    padding: 6px 12px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                    transition: 0.6s ease;
+                    border-radius: 50%;
+                    -webkit-user-select: none;
+                    background-color: rgb(217, 217, 217);
+                }
+                /* Position the "next button" to the right */
+                .next {
+                    right: 0;
+                    // margin-right: 5px;
+                }
+                .prev {
+                    left: 0;
+                }
+                /* On hover, add a black background color with a little bit see-through */
+                .prev:hover,
+                .next:hover {
+                    background-color: $color-common;
+                }
+            }
+            /* The dots/bullets/indicators */
+            span.dot {
+                height: 7px;
+                width: 7px;
+                margin: 10px 0;
+                background-color: #dcd6d6;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            span.active,
+            span.dot:hover {
+                background-color: $color-common;
+            }
+        }
+    }
+    div.license {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+$color-common: #1499ff;
+$font-common:'Indie Flower',
+cursive;
+$font-header: 'Rowdies',
+cursive;
+@mixin devices ($breakpoint) {
+    @if $breakpoint==xxLargeDevices {
+        @media only screen and (max-width: 1400px) {
+            @content;
+        }
+    }
+    @if $breakpoint==xLargeDevices {
+        @media only screen and (max-width: 1200px) {
+            @content;
+        }
+    }
+    @if $breakpoint==largeDevices {
+        @media only screen and (max-width: 992px) {
+            @content;
+        }
+    }
+    @if $breakpoint==mediumDevices {
+        @media only screen and (max-width: 768px) {
+            @content;
+        }
+    }
+    @if $breakpoint==smallDevices {
+        @media only screen and (max-width: 576px) {
+            @content;
+        }
+    }
+    @if $breakpoint==xSmallDevices {
+        @media only screen and (max-width: 435px) {
+            @content;
+        }
+    }
+}

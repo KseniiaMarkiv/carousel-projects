@@ -2,39 +2,45 @@
 <em>In this place, I will collect varied designs of carousels</em>
 
 <h2>Carousel of projects</h2><br/>
-[Link](https://kseniiamarkiv.github.io/carousel-projects/01_first)<br/>
+[Link](https://kseniiamarkiv.github.io/carousel-projects/01_first)
+
+
 <em> implemented due to the Flickity library</em><br/>
-1. this example has the capability automatically advance to the next cell.
-2. implemented design for 2 abilities:
-- overlay text div on img;
-- and image div is main div;
-3. *here is realized responsive design;*
+1. this example has the capability automatically advance to the next cell.<br/>
+2. implemented design for 2 abilities:<br/>
+- overlay text div on img;<br/>
+- and image div is main div;<br/>
+3. <strong>here is realized responsive design;</strong> <br/>
 
 
 <h2>Carousels of Testimonials</h2><br/>
+
 [Link **first**](https://kseniiamarkiv.github.io/carousel-projects/02_second-testimonial/01_first)<br/>
-**[implemented:]**
-- automatically advance to the next cell;
-- and ability to switch testimonial to next due to next and prev buttons;
-- here is no realized responsive design;
+**[IMPLEMENTED:]**<br/>
+- automatically advance to the next cell;<br/>
+- and ability to switch testimonial to next due to next and prev buttons;<br/>
+- here is no realized responsive design;<br/>
 
 [Link **second**](https://kseniiamarkiv.github.io/carousel-projects/02_second-testimonial/02_second)<br/>
-**[implemented:]**
-- automatically advance to the next cell;
-- and ability to switch testimonial to next due to next and prev buttons;
-- here is no realized responsive design;
+**[IMPLEMENTED:]**<br/>
+- automatically advance to the next cell;<br/>
+- and ability to switch testimonial to next due to next and prev buttons;<br/>
+- here is no realized responsive design;<br/>
 
 <h3>Repeat given task</h3>
-![Link](https://kseniiamarkiv.github.io/carousel-projects/02_second-testimonial/02_second/css/imgs/task.jpg)<br/>
+![Link](https://kseniiamarkiv.github.io/carousel-projects/02_second-testimonial/02_second/css/imgs/task.jpg)
+
 
 
 <h3>My example</h3>
-![Link](https://kseniiamarkiv.github.io/carousel-projects/02_second-testimonial/02_second/css/imgs/my-task.jpg)<br/>
+![Link](https://kseniiamarkiv.github.io/carousel-projects/02_second-testimonial/02_second/css/imgs/my-task.jpg)
+
 
 
 [Link **third**](https://kseniiamarkiv.github.io/carousel-projects/02_second-testimonial/03_fird)<br/>
+
 <em> (seen example - very like to me) implemented due to the *Bootstrap* library </em><br/>
-**[implemented:]**
+**[IMPLEMENTED:]**
 1. automatically advance to the next cell;
 2. and ability to switch testimonial to next due to carousel-indicators;
 3. *here is realized responsive design;* (changed it myself)
